@@ -61,16 +61,37 @@
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
 
-// double[,] array = new double[1,4];
-
-// Random random = new Random();
-// for (int i = 0; i < 1; i++)
+// double[] NewArray (int size, int min, int max)
 // {
-//     for (int j = 0; j < 4; j++)
+//     double[] arr = new double[size];
+//     for (int i = 0; i < size; i++)
 //     {
-//         array[i, j] = random.NextDouble() * 100; // NextDouble() дает случайное вещественное число в диапазоне от 0 до 1
-//         array[i,j] *= 0.1;
-//         Console.Write("|" + "{0,6:F2}", array[i, j]);
+//         arr[i] = Math.Round(new Random().NextDouble() *100, 2);
 //     }
-//     Console.WriteLine();
+//     return arr;
 // }
+
+// double [] doubleArray = NewArray (5,0,1);
+// Console.WriteLine ($"массив вещественных чисел: [{String.Join("; ", doubleArray)}]");
+
+// double minValue = doubleArray[0];
+// double maxValue = doubleArray[0];
+
+// for (int i = 0; i < doubleArray.Length; i++)
+// {
+//     if (minValue > doubleArray[i])
+//     {
+//         minValue = doubleArray[i];
+//     }
+//     else if (doubleArray[i] > maxValue)
+//     {
+//         maxValue = doubleArray[i];
+//     }
+// }
+// Console.WriteLine ($"Минимальное число в массиве: {minValue}"); 
+
+// Console.WriteLine ($"Максимальное число в массиве: {maxValue}");     
+
+// double differentNumber = 0;
+
+// Console.WriteLine (differentNumber = maxValue -minValue);
